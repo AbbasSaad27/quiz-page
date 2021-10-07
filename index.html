@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/script.js"></script>
+    <title>Guess the Artist</title>
+  </head>
+  <body>
+    <main class="content-container">
+      <header class="header">
+        <h1 class="quiz-title">Guess The Artist</h1>
+      </header>
+      <section class="answer-input">
+        <form action="" class="answer-form">
+          <label for="artist-name" class="artist-label">Name:</label>
+          <input
+            type="text"
+            id="artist-name"
+            class="artist-name-input"
+            placeholder="Name Here"
+            required
+          />
+          <button type="submit" class="btn btn-submit">GO</button>
+        </form>
+        <p class="score">Score: <span class="score-count"></span></p>
+      </section>
+      <section class="quiz-content">
+        <article class="artist-img-container"></article>
+        <article class="options-container">
+          <div class="options"></div>
+        </article>
+        <article class="leader-board leader-board-empty">
+          <p class="leader-board-title">Top 5 Scores</p>
+          <p class="leader-board-placeholder">Names and Score</p>
+        </article>
+      </section>
+      <button type="button" class="btn btn-next">NEXT</button>
+    </main>
+  </body>
+</html>
